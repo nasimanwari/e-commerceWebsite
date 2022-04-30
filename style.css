@@ -125,6 +125,15 @@ body {
     left: 20px;
 }
 
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+
 /* Home Page */
 
 #hero{
@@ -506,3 +515,67 @@ footer .copyright{
     width: 100%;
     text-align: center;
 }
+
+@media (max-width:799px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: field;
+        top: 0px;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: white;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25%;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    
+    }
+    #mobile{
+        color: black;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close{
+        display: inital;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #lg-bag{
+        display: none;
+    }
+
+    #hero{
+        height: 90vh;
+        background-position: top 30% right 30%;
+        padding: 0 80px;
+    }
+
+    #feature{
+        justify-content: center;
+    }
+
+    #feature .fe-box{
+        margin: 15px 15px;
+    }
+
+}
+
