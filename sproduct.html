@@ -8,7 +8,6 @@
         <link rel = "stylesheet" href="D:\e-commerceWebsite\style.css">
     </head>
         
-    <body>
         <section id="header">
             <a href ="#"><img src="img/logo.png" class ="logo" alt="logo"></a>
 
@@ -29,29 +28,48 @@
             </div>
         </section>
 
-        <section id = "page-header">
-            <h1>İndirim Fırsatı</h1>
-            <p>%70'e varan Mayıs indirimi</p>
+        <section id="prodetails" class="section-p1">        
+            <div class="single-pro-image">
+                <img src="img/products/lacostegomlek.jpg" width="100%" id="MainImage" alt="">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="img/products/2_org_zoom.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/products/lacostegomlek.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/products/lacostegomlek.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/products/lacostegomlek.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="single-pro-details">
+                <h6>Anasayfa / Tişörtler</h6>
+                <h4>Erkek Modası</h4>
+                <h2>1000 TL</h2>
+                <select>
+                    <option>Beden Seç</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XS</option>
+                    <option>XL</option>
+                </select>
+                <input type="number" value="1">
+                <button class="normal">Sepete Ekle</button>
+                <h4>Ürün Özellikleri</h4>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae temporibus fuga nulla nisi voluptatum nam doloribus qui? Consequatur hic voluptate laboriosam, sequi omnis molestiae. Debitis commodi quas nihil adipisci veritatis.</span>
+
+            </div>
         </section>
 
         <section id="product1" class="section-p1">
+            <h2>Özel Ürünler</h2>
+            <p>Yaz Koleksiyonu</p>
             <div class="pro-container">
-                <div class="pro" onclick = "window.location.href='sproduct.html';">
-                    <img src="img/products/lacostegomlek.jpg" alt="">
-                    <div class="des">
-                        <span>lacoste</span>
-                        <h5>Lacoste Erkek Slim Fit Gömlek</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>1000 TL</h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
                 <div class="pro">
                     <img src="img/products/lacostegomlek.jpg" alt="">
                     <div class="des">
@@ -85,55 +103,7 @@
                     <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
                 </div>
                 <div class="pro">
-                    <img src="img/products/lacostegomlek.jpg" alt="">
-                    <div class="des">
-                        <span>lacoste</span>
-                        <h5>Lacoste Erkek Slim Fit Gömlek</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>1000 TL</h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/lacostegomlek.jpg" alt="">
-                    <div class="des">
-                        <span>lacoste</span>
-                        <h5>Lacoste Erkek Slim Fit Gömlek</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>1000 TL</h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/lacostegomlek.jpg" alt="">
-                    <div class="des">
-                        <span>lacoste</span>
-                        <h5>Lacoste Erkek Slim Fit Gömlek</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>1000 TL</h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/lacostegomlek.jpg" alt="">
+                    <img src="img/products/2_org_zoom.jpg" alt="">
                     <div class="des">
                         <span>lacoste</span>
                         <h5>Lacoste Erkek Slim Fit Gömlek</h5>
@@ -224,6 +194,27 @@
             </div>
 
         </footer>
+
+        <script>
+            var mainImage = document.getElementById("MainImg");
+            var smallimg = document.getElementsByClassName("small-img");
+
+            smallimg[0].onclick = function(){
+                MainImage.src = smallimg[0].src;
+            }
+
+            smallimg[1].onclick = function(){
+                MainImage.src = smallimg[1].src;
+            }
+
+            smallimg[2].onclick = function(){
+                MainImage.src = smallimg[2].src;
+            }
+            smallimg[3].onclick = function(){
+                MainImage.src = smallimg[3].src;
+            }
+        </script>
+
         <script src = "script.js"></script>
     </body>
 
